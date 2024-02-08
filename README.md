@@ -1,7 +1,6 @@
 # LVM-Snapshot
 Collection of scripts to automate process of creating an LVM snapshot and backing out changes.
 
-
 # create_lvsnaproot.sh
 
 ## Features
@@ -10,7 +9,6 @@ Collection of scripts to automate process of creating an LVM snapshot and backin
 - Creates a snapshot of the root LV with a user-defined or default size (5G).
 - Backs up the `/boot` directory for backing out kernel changes with `backout_lvsnaproot.sh`.
 
-
 # backout_lvsnaproot.sh
 
 ## Features
@@ -18,3 +16,6 @@ Collection of scripts to automate process of creating an LVM snapshot and backin
 - Restores the `/boot` directory from a predefined backup location.
 - Attempts to merge the snapshot multiple times in case of transient state or failure.
 - Rebuilds GRUB configuration based on `/boot` backup from `create_lvsnaproot.sh` in case of kernel update.
+
+# Compatibility and Known Issues
+*In progress*
